@@ -1,0 +1,16 @@
+{
+  "home": {
+    "title": "Home",
+    "journeyTitle": "Seguir adiante na jornada",
+    "links": {
+      "projects": "Explore meus projetos",
+      "about": "Descubra mais sobre mim",
+      "contact": "Entre em contato"
+    },
+    "footer": {
+      "madeBy": "Feito por: João Guilherme",
+      "rights": "Todos os direitos reservados"
+    },
+    "imageAlt": "Imagem hollow night"
+  }
+}

@@ -6,22 +6,21 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import HomeContent from "../components/Home/HomeContent";
-
-type Locale = "pt" | "es" | "en";
+import type { Locale, Translation } from "../types";
 
 interface HomeProps {
   locale: Locale;
   setLocale: Dispatch<SetStateAction<Locale>>;
-  copy: Record<string, string>;
+  copy: Translation;
 }
 
-const Home = ({ locale, setLocale, copy: _copy }: HomeProps) => {
+const Home = ({ locale, setLocale, copy }: HomeProps) => {
   return (
     <div className={"w-full background"}>
-      <Navbar locale={locale} setLocale={setLocale} copy={_copy} />
-      <HomeContent copy={_copy} />
+      <Navbar locale={locale} setLocale={setLocale} copy={copy} />
+      <HomeContent copy={copy} />
       <HeroParticles />
-      <Footer copy={_copy} />
+      <Footer copy={copy} />
     </div>
   );
 };

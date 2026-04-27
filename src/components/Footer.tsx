@@ -1,5 +1,7 @@
+import type { Translation } from "../types";
+
 interface FooterProps {
-  copy: Record<string, string>;
+  copy: Translation;
 }
 
 const Footer = ({ copy }: FooterProps) => {
@@ -21,7 +23,7 @@ const Footer = ({ copy }: FooterProps) => {
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary transition-colors duration-200"
-          aria-label={copy.footerX}
+          aria-label={copy.footerInsta}
         >
           {copy.footerInsta}
         </a>

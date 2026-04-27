@@ -2,24 +2,15 @@ import { FaCircle } from "react-icons/fa";
 import type { Dispatch, SetStateAction } from "react";
 import ChangeLanguage from "./ChangeLanguage";
 import { Link } from "react-router-dom";
-
-type Locale = "pt" | "es" | "en";
+import type { Locale, NavbarCopy } from "../types";
 
 interface NavbarProps {
-  locale: Locale;
-  setLocale: Dispatch<SetStateAction<Locale>>;
-  copy: {
-    navHome: string;
-    navProjects: string;
-    navAbout: string;
-  };
+  locale?: Locale;
+  setLocale?: Dispatch<SetStateAction<Locale>>;
+  copy: NavbarCopy;
 }
 
-const Navbar = ({
-  locale,
-  setLocale,
-  copy: _copy,
-}: NavbarProps): React.ReactNode => {
+const Navbar = ({ locale, setLocale, copy }: NavbarProps): React.ReactNode => {
   return (
     <div>
       <div className="flex text-center items-center justify-around p-4 sticky top-0 w-full backdrop-blur-md z-50 h-16 font-jetbrains ">
@@ -29,16 +20,21 @@ const Navbar = ({
         </div>
         <div className="flex text-center items-center justify-between gap-4">
           <Link to="/" className="mx-2 text text-primary link-hover">
-            {_copy.navHome}
+            {copy.navHome}
           </Link>
           <Link to="/projects" className="mx-2 text text-primary link-hover">
-            {_copy.navProjects}
+            {copy.navProjects}
           </Link>
           <Link to="/about" className="mx-2 text text-primary link-hover">
-            {_copy.navAbout}
+            {copy.navAbout}
+          </Link>
+          <Link to="/contact" className="mx-2 text text-primary link-hover">
+            {copy.navContact}
           </Link>
         </div>
-        <ChangeLanguage locale={locale} setLocale={setLocale} />
+        {locale && setLocale && (
+          <ChangeLanguage locale={locale} setLocale={setLocale} />
+        )}
       </div>
     </div>
   );

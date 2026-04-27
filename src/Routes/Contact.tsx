@@ -1,15 +1,25 @@
 import type { Dispatch, SetStateAction } from "react";
+import type { Locale, Translation } from "../types";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-type Locale = "pt" | "es" | "en";
-
-interface HomeProps {
+interface ContactProps {
   locale: Locale;
   setLocale: Dispatch<SetStateAction<Locale>>;
-  copy: Record<string, string>;
+  copy: Translation;
 }
 
-const Contact = ({ locale, setLocale, copy }: HomeProps) => {
-  return <div>Contact</div>;
+const Contact = ({
+  locale: locale,
+  setLocale: setLocale,
+  copy: copy,
+}: ContactProps) => {
+  return (
+    <div>
+      <Navbar locale={locale} setLocale={setLocale} copy={copy} />
+      <Footer copy={copy} />
+    </div>
+  );
 };
 
 export default Contact;

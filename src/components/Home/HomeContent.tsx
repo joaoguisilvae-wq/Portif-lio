@@ -1,8 +1,9 @@
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
+import type { Translation } from "../../types";
 
 interface HomeProps {
-  copy: Record<string, string>;
+  copy: Translation;
 }
 
 const HomeContent = ({ copy }: HomeProps) => {

@@ -1,73 +1,139 @@
-# React + TypeScript + Vite
+# 🎨 Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portfólio moderno e interativo construído com **React 19**, **TypeScript** e **Tailwind CSS**. Apresenta suporte multilíngue (Português, Espanhol, Inglês) e animações fluidas com partículas.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🌍 **Suporte Multilíngue**: Interface disponível em Português, Espanhol e Inglês
+- 🎯 **Navegação Intuitiva**: Roteamento completo com React Router v7
+- 🎪 **Animações Dinâmicas**: Efeito de partículas interativas na home
+- 🎨 **Design Moderno**: Componentes UI customizáveis com shadcn e Tailwind CSS
+- 📱 **Responsivo**: Layout adaptável para todos os dispositivos
+- ⚡ **Performance**: Otimizado com Vite para build rápido
+- 🔤 **Tipagem Completa**: TypeScript para maior segurança
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** 19.2.4
+- **TypeScript** 5.7.2
+- **Vite** 6.x
+- **Tailwind CSS** 4.2.4
+- **React Router DOM** 7.14.1
+- **TsParticles** 3.9.1
+- **shadcn/ui** - Componentes reutilizáveis
+- **Lucide React** - Ícones modernos
+- **ESLint** - Linting de código
 
-## Expanding the ESLint configuration
+## 📋 Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node.js 18+
+- npm ou pnpm
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Como Executar
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Clone o repositório**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   ```bash
+   git clone <seu-repositorio>
+   cd Portfolio
+   ```
+
+2. **Instale as dependências**
+
+   ```bash
+   pnpm install
+   # ou
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento**
+
+   ```bash
+   pnpm dev
+   # ou
+   npm run dev
+   ```
+
+4. **Acesse em seu navegador**
+   ```
+   http://localhost:5173
+   ```
+
+## 📦 Build para Produção
+
+```bash
+pnpm build
+# ou
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Para visualizar a build localmente:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+pnpm preview
+# ou
+npm run preview
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/
+│   ├── ChangeLanguage.tsx    # Seletor de idioma
+│   ├── Footer.tsx             # Rodapé
+│   ├── Navbar.tsx             # Barra de navegação
+│   ├── Home/
+│   │   ├── HomeContent.tsx    # Conteúdo da home
+│   │   └── Particles.tsx      # Animação de partículas
+│   └── ui/
+│       └── button.tsx         # Componentes UI
+├── Routes/
+│   ├── Home.tsx               # Página home
+│   ├── About.tsx              # Página sobre mim
+│   ├── Projects.tsx           # Página de projetos
+│   └── Contact.tsx            # Página de contato
+├── assets/
+│   ├── locales/               # Arquivos de tradução (i18n)
+│   │   ├── pt.json
+│   │   ├── en.json
+│   │   └── esp.json
+│   └── img/                   # Imagens do projeto
+├── lib/
+│   └── utils.ts               # Funções utilitárias
+├── App.tsx                    # Componente principal
+├── main.tsx                   # Ponto de entrada
+└── index.css                  # Estilos globais
+```
+
+## 🎯 Páginas
+
+- **Home** - Apresentação pessoal com animações
+- **Sobre Mim** - Informações e experiência
+- **Projetos** - Portfólio de trabalhos
+- **Contato** - Formulário e informações de contato
+
+## 🌐 Idiomas Suportados
+
+- 🇧🇷 Português (pt)
+- 🇬🇧 Inglês (en)
+- 🇪🇸 Espanhol (es)
+
+## 📝 Scripts Disponíveis
+
+- `pnpm dev` - Inicia servidor de desenvolvimento
+- `pnpm build` - Build para produção
+- `pnpm preview` - Visualiza build localmente
+- `pnpm lint` - Verifica erros de linting
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Desenvolvido com ❤️
+
+```
+
 ```

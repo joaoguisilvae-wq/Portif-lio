@@ -1,19 +1,21 @@
 import type { Dispatch, SetStateAction } from "react";
-
-type Locale = "pt" | "es" | "en";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import type { Locale, Translation } from "../types";
 
 interface AboutProps {
   locale: Locale;
   setLocale: Dispatch<SetStateAction<Locale>>;
-  copy: Record<string, string>;
+  copy: Translation;
 }
 
-const About = ({
-  locale: _locale,
-  setLocale: _setLocale,
-  copy: _copy,
-}: AboutProps): React.ReactNode => {
-  return <div>About</div>;
+const About = ({ locale, setLocale, copy }: AboutProps): React.ReactNode => {
+  return (
+    <div>
+      <Navbar locale={locale} setLocale={setLocale} copy={copy} />
+      <Footer copy={copy} />
+    </div>
+  );
 };
 
 export default About;

@@ -1,50 +1,27 @@
-import { Link } from "react-router-dom";
+import type { Dispatch, SetStateAction } from "react";
 
-import ChangeLanguage from "../components/ChangeLanguage";
+import HeroParticles from "../components/Home/Particles";
 
-import style from "./Home.module.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const Home = () => {
-  // function t(key: string) {
-  //   const keys = key.split(".");
-  //   let value = translations[currentLanguage];
+import HomeContent from "../components/Home/HomeContent";
 
-  //   for (const k of keys) {
-  //     value = value[k];
-  //   }
+type Locale = "pt" | "es" | "en";
 
-  //   return value;
-  // }
+interface HomeProps {
+  locale: Locale;
+  setLocale: Dispatch<SetStateAction<Locale>>;
+  copy: Record<string, string>;
+}
+
+const Home = ({ locale, setLocale, copy: _copy }: HomeProps) => {
   return (
-    <div className={"container " + style.container}>
-      <div className={"flex-container " + style.flexContainer}>
-        <div className={style.titleContainer}>
-          <h1>Home</h1>
-          <img src="#" alt="Imagem hollow night" />
-        </div>
-        <div className={style.contentContainer}>
-          <h3>Seguir adiante na jornada</h3>
-          <div className={style.grid}>
-            <Link to="/projects" className={style.linkCard}>
-              Explore meus projetos
-            </Link>
-            <Link to="/about" className={style.linkCard}>
-              Descubra mais sobre mim
-            </Link>
-            <Link to="/contact" className={style.linkCard}>
-              Entre em contato
-            </Link>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <p>
-          Feito por: João Guilherme
-          <span className={style.currentYear}></span>. &copy; Todos os direitos
-          reservados.
-        </p>
-      </footer>
-      <ChangeLanguage />
+    <div className={"w-full background"}>
+      <Navbar locale={locale} setLocale={setLocale} copy={_copy} />
+      <HomeContent copy={_copy} />
+      <HeroParticles />
+      <Footer copy={_copy} />
     </div>
   );
 };

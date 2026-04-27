@@ -1,0 +1,45 @@
+{
+  "es": {
+    "localeLabel": "Español",
+    "navAria": "Secciones principales",
+    "socialAria": "Redes y contacto",
+    "navHome": "Inicio",
+    "navProjects": "Proyectos",
+    "navAbout": "Sobre",
+    "topMeta": "// 47.6062° N · 122.3321° W",
+    "version": "v.04 - mmxxvi",
+    "kicker": "Desarrollador · Sistemas · Máquinas silenciosas",
+    "titleStart": "Construyendo",
+    "titleEnd": "en la oscuridad.",
+    "description": "Diseño e ingeniero software con la paciencia de un artesano y la curiosidad de un explorador.",
+    "linkProjects": "Proyectos",
+    "linkAbout": "Sobre mí",
+    "linkContact": "Contacto",
+    "footerTagline": "Hecho en soledad. © 2026.",
+    "footerGithub": "github",
+    "footerX": "x",
+    "footerEmail": "email",
+    "projectsEyebrow": "— Trabajo seleccionado",
+    "projectsCount": "05 / trabajos",
+    "projectsTitle": "Proyectos",
+    "projectsIntro": "Un pequeño archivo de cosas que he construido, roto y reconstruido. Cada una es un estudio de contención.",
+    "projectsArchive": "Trabajos antiguos archivados. Escríbeme para obtener el catálogo completo.",
+    "aboutEyebrow": "— Sobre",
+    "aboutTitle": "Un ingeniero silencioso.",
+    "aboutLead": "Trabajo entre codigo y composicion: construyendo herramientas, interfaces y pequenos mundos. Me importan los sistemas que envejecen bien, las interfaces que respiran y la disciplina de quitar mas de lo que agrego.",
+    "aboutParagraphOne": "Una decada entre laboratorios de investigacion, estudios indie y pequenas startups; prefiero proyectos donde el oficio importa mas que la escala.",
+    "aboutParagraphTwo": "Mis problemas favoritos viven en la frontera de dos disciplinas: compiladores y tipografia, audio y arquitectura, sistemas y silencio.",
+    "aboutParagraphThree": "Lejos del teclado suelo estar dibujando, caminando o cuidando una pequena obsesion por los sintetizadores analogicos.",
+    "aboutFacts": [
+      { "label": "Basado en", "value": "Pacific Northwest" },
+      { "label": "Trabajando desde", "value": "2014" },
+      { "label": "Stack principal", "value": "TypeScript · Rust · Go" },
+      {
+        "label": "Actualmente",
+        "value": "Una startup de herramientas de audio"
+      },
+      { "label": "Foco", "value": "Herramientas, sistemas, interfaces" },
+      { "label": "Abierto a", "value": "Colaboraciones y residencias" }
+    ]
+  }
+}

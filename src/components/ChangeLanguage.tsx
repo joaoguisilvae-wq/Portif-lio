@@ -1,18 +1,10 @@
 import { IoLanguage } from "react-icons/io5";
 import { useState } from "react";
-import type { Dispatch, SetStateAction } from "react";
+import { useTranslation } from "../context/TranslationContext";
+import type { Locale } from "../types";
 
-type Locale = "pt" | "es" | "en";
-
-interface ChangeLanguageProps {
-  locale: Locale;
-  setLocale: Dispatch<SetStateAction<Locale>>;
-}
-
-const ChangeLanguage = ({
-  locale,
-  setLocale,
-}: ChangeLanguageProps): React.ReactNode => {
+const ChangeLanguage = (): React.ReactNode => {
+  const { locale, setLocale } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLanguageChange = (newLocale: Locale) => {

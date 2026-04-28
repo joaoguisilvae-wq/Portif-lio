@@ -1,16 +1,11 @@
 import { FaCircle } from "react-icons/fa";
-import type { Dispatch, SetStateAction } from "react";
 import ChangeLanguage from "./ChangeLanguage";
 import { Link } from "react-router-dom";
-import type { Locale, NavbarCopy } from "../types";
+import { useTranslation } from "../context/TranslationContext";
 
-interface NavbarProps {
-  locale?: Locale;
-  setLocale?: Dispatch<SetStateAction<Locale>>;
-  copy: NavbarCopy;
-}
+const Navbar = () => {
+  const { copy } = useTranslation();
 
-const Navbar = ({ locale, setLocale, copy }: NavbarProps): React.ReactNode => {
   return (
     <div>
       <div className="flex text-center items-center justify-around p-4 sticky top-0 w-full backdrop-blur-md z-50 h-16 font-jetbrains ">
@@ -32,9 +27,7 @@ const Navbar = ({ locale, setLocale, copy }: NavbarProps): React.ReactNode => {
             {copy.navContact}
           </Link>
         </div>
-        {locale && setLocale && (
-          <ChangeLanguage locale={locale} setLocale={setLocale} />
-        )}
+        <ChangeLanguage />
       </div>
     </div>
   );

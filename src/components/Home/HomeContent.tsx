@@ -1,12 +1,9 @@
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
-import type { Translation } from "../../types";
+import { useTranslation } from "../../context/TranslationContext";
 
-interface HomeProps {
-  copy: Translation;
-}
-
-const HomeContent = ({ copy }: HomeProps) => {
+const HomeContent = () => {
+  const { copy } = useTranslation();
   const now = new Date();
 
   const day = format(now, "dd");

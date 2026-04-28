@@ -34,7 +34,7 @@ Um portfólio moderno e interativo construído com **React 19**, **TypeScript** 
 1. **Clone o repositório**
 
    ```bash
-   git clone <seu-repositorio>
+   git clone https://github.com/joaoguisilvae-wq/Portif-lio.git
    cd Portfolio
    ```
 
@@ -133,7 +133,3 @@ Este projeto está sob a licença MIT.
 ---
 
 Desenvolvido com ❤️
-
-```
-
-```

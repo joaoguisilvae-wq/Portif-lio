@@ -2,6 +2,7 @@ import { IoLanguage } from "react-icons/io5";
 import { useState } from "react";
 import { useTranslation } from "../context/TranslationContext";
 import type { Locale } from "../types";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 const ChangeLanguage = (): React.ReactNode => {
   const { locale, setLocale } = useTranslation();
@@ -9,7 +10,6 @@ const ChangeLanguage = (): React.ReactNode => {
 
   const handleLanguageChange = (newLocale: Locale) => {
     setLocale(newLocale);
-    setIsOpen(false);
   };
 
   return (
@@ -21,24 +21,13 @@ const ChangeLanguage = (): React.ReactNode => {
         <IoLanguage />
       </button>
       {isOpen && (
-        <div className="flex flex-col gap-2 absolute top-14 right-64 bg-secondary p-2 rounded language-menu">
-          <button
-            onClick={() => handleLanguageChange("pt")}
-            className={`language-btn ${locale === "pt" ? "active" : ""}`}
-          >
-            PT
+        <div className="flex flex-row w-64 gap-2 absolute items-center justify-center top-14 right-64 bg-secondary p-2 rounded">
+          <button className="w-8 h-8 flex items-center justify-center">
+            <IoIosArrowDropleft />
           </button>
-          <button
-            onClick={() => handleLanguageChange("en")}
-            className={`language-btn ${locale === "en" ? "active" : ""}`}
-          >
-            EN
-          </button>
-          <button
-            onClick={() => handleLanguageChange("es")}
-            className={`language-btn ${locale === "es" ? "active" : ""}`}
-          >
-            ES
+          <p className="w-8 h-8 flex items-center justify-center">{locale}</p>
+          <button className="w-8 h-8 flex items-center justify-center">
+            <IoIosArrowDropright />
           </button>
         </div>
       )}

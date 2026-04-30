@@ -28,25 +28,101 @@ export const translations: Record<Locale, Translation> = {
     projectsTitle: "Projetos",
     projectsIntro:
       "Um pequeno arquivo de coisas que construí, quebrei e reconstruí. Cada uma é um estudo de contenção.",
+    projectsInfos: [
+      {
+        key: "fitai",
+        date: "2026",
+        img: "src/assets/img/FitAi.png",
+        title: "FIT.AI",
+        subtitle: "Faça seu plano de treino com IA",
+        description:
+          "Um SaaS de academia onde você pode gerenciar e criar planos de treino com IA.",
+        skills: { "1st": "Next.js", "2nd": "React", "3rd": "TypeScript" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/Bootcamp-Treinos-API",
+        linkProject: "",
+        status: "Desenvolvendo",
+      },
+      {
+        key: "calculadora",
+        date: "2026",
+        img: "src/assets/img/CalcImg.png",
+        title: "Calculadora multifunções",
+        subtitle: "Contas das simples as avançadas",
+        description:
+          "Uma calculadora cientifica com função de histórico, tabelas de conversão, calculo de IMC e muito mais. Tudo feito com React e bibliotecas.",
+        skills: {
+          "1st": "React",
+          "2nd": "JavaScript",
+          "3rd": "Tailwind/shadcn",
+        },
+        linkGithub: "",
+        linkProject:
+          "https://calculadora-react-px32ftrfu-joaoguisilvae-wqs-projects.vercel.app/tutorial?step=1&redirect=/",
+        status: "Refatorando",
+      },
+      {
+        key: "hotel",
+        date: "2026",
+        img: "",
+        title: "BRH - Hospedagem",
+        subtitle: "Hospedagem fácil e rápida",
+        description:
+          "Projeto de e-commerce de uma página de hotéis tendo hotéis, preços e serviços reais, mas sem compra real.",
+        skills: {
+          "1st": "React",
+          "2nd": "TypeScript",
+          "3rd": "Tailwind/shadcn",
+        },
+        linkGithub: "https://github.com/joaoguisilvae-wq/BRH",
+        linkProject: "https://github.com/joaoguisilvae-wq/Calculadora-React",
+        status: "Desenvolvendo",
+      },
+      {
+        key: "staygreen",
+        date: "2026",
+        img: "",
+        title: "StayGreen",
+        subtitle: "Conscientização Monetária",
+        description:
+          "Um projeto sobre economia que visa ajudar pessoas a sair das dívidas por meio de gráficos, tabelas e etc.",
+        skills: { "1st": "JavaScript", "2nd": "Python", "3rd": "HTML/CSS" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/StayGreen",
+        linkProject: "https://stay-green-seven.vercel.app/",
+        status: "Desenvolvendo",
+      },
+      {
+        key: "notes",
+        date: "2026",
+        img: "",
+        title: "Dev-Notes",
+        subtitle: "Faça suas anotações",
+        description:
+          "Um projeto feito enquanto aprendia JS, crie novas tarefas, apague-as ou fixe-as. E não perca suas anotações com o salvamento local.",
+        skills: { "1st": "JavaScript", "2nd": "HTML/CSS" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/Dev-notes",
+        linkProject: "https://stay-green-seven.vercel.app/",
+        status: "Desenvolvido",
+      },
+    ],
     projectsArchive:
       "Trabalhos antigos arquivados. Entre em contato para o catálogo completo.",
     aboutEyebrow: "— Sobre",
     aboutTitle: "Um engenheiro silencioso.",
     aboutLead:
-      "Trabalho entre codigo e composicao: construindo ferramentas, interfaces e pequenos mundos. Valorizo sistemas que envelhecem bem, interfaces que respiram e a disciplina de remover mais do que adicionar.",
+      "Trabalho entre código e composição: construindo ferramentas, interfaces e pequenos mundos. Valorizo sistemas que envelhecem bem, interfaces que respiram e a disciplina de remover mais do que adicionar.",
     aboutParagraphOne:
-      "Uma decada entre laboratorios de pesquisa, estudios indie e pequenas startups, sempre preferindo projetos onde o oficio importa mais que a escala.",
+      "Uma década entre laboratórios de pesquisa, estúdios indie e pequenas startups, sempre preferindo projetos onde o ofício importa mais que a escala.",
     aboutParagraphTwo:
-      "Meus problemas favoritos vivem na fronteira de duas disciplinas: compiladores e tipografia, audio e arquitetura, sistemas e silencio.",
+      "Meus problemas favoritos vivem na fronteira de duas disciplinas: compiladores e tipografia, áudio e arquitetura, sistemas e silêncio.",
     aboutParagraphThree:
-      "Longe do teclado, geralmente estou desenhando, caminhando ou alimentando uma pequena obsessao por sintetizadores analogicos.",
+      "Longe do teclado, geralmente estou desenhando, caminhando ou alimentando uma pequena obsessão por sintetizadores analógicos.",
     aboutFacts: [
       { label: "Baseado em", value: "Pacific Northwest" },
       { label: "Atuando desde", value: "2014" },
       { label: "Stack principal", value: "TypeScript · Rust · Go" },
       { label: "Atualmente", value: "Uma startup de audio tools" },
       { label: "Foco", value: "Ferramentas, sistemas, interfaces" },
-      { label: "Aberto a", value: "Colaboracoes e residencias" },
+      { label: "Aberto a", value: "Colaborações e residências" },
     ],
   },
   es: {
@@ -76,6 +152,82 @@ export const translations: Record<Locale, Translation> = {
     projectsTitle: "Proyectos",
     projectsIntro:
       "Un pequeño archivo de cosas que construí, rompí y reconstruí. Cada una es un estudio de contención.",
+    projectsInfos: [
+      {
+        key: "fitai",
+        date: "2026",
+        img: "src/assets/img/FitAi.png",
+        title: "FIT.AI",
+        subtitle: "Crea tu plan de entrenamiento con IA",
+        description:
+          "Un SaaS de gimnasio donde puedes gestionar y crear planes de entrenamiento con IA.",
+        skills: { "1st": "Next.js", "2nd": "React", "3rd": "TypeScript" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/Bootcamp-Treinos-API",
+        linkProject: "",
+        status: "Desarrollando",
+      },
+      {
+        key: "calculadora",
+        date: "2026",
+        img: "src/assets/img/CalcImg.png",
+        title: "Calculadora multifunción",
+        subtitle: "Desde cálculos simples hasta avanzados",
+        description:
+          "Una calculadora científica con historial, tablas de conversión, cálculo de IMC y mucho más. Todo hecho con React y bibliotecas.",
+        skills: {
+          "1st": "React",
+          "2nd": "JavaScript",
+          "3rd": "Tailwind/shadcn",
+        },
+        linkGithub: "",
+        linkProject:
+          "https://calculadora-react-px32ftrfu-joaoguisilvae-wqs-projects.vercel.app/tutorial?step=1&redirect=/",
+        status: "Refactorizando",
+      },
+      {
+        key: "hotel",
+        date: "2026",
+        img: "",
+        title: "BRH - Hospedaje",
+        subtitle: "Hospedaje fácil y rápido",
+        description:
+          "Proyecto de e-commerce de una página de hoteles con hoteles, precios y servicios reales, pero sin compra real.",
+        skills: {
+          "1st": "React",
+          "2nd": "TypeScript",
+          "3rd": "Tailwind/shadcn",
+        },
+        linkGithub: "https://github.com/joaoguisilvae-wq/BRH",
+        linkProject: "https://github.com/joaoguisilvae-wq/Calculadora-React",
+        status: "Desarrollando",
+      },
+      {
+        key: "staygreen",
+        date: "2026",
+        img: "",
+        title: "StayGreen",
+        subtitle: "Conciencia Monetaria",
+        description:
+          "Un proyecto sobre economía que busca ayudar a las personas a salir de las deudas mediante gráficos, tablas y más.",
+        skills: { "1st": "JavaScript", "2nd": "Python", "3rd": "HTML/CSS" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/StayGreen",
+        linkProject: "https://stay-green-seven.vercel.app/",
+        status: "Desarrollando",
+      },
+      {
+        key: "notes",
+        date: "2026",
+        img: "",
+        title: "Dev-Notes",
+        subtitle: "Haz tus anotaciones",
+        description:
+          "Un proyecto hecho mientras aprendía JS, crea nuevas tareas, elimínalas o fíjalas. Y no pierdas tus notas gracias al guardado local.",
+        skills: { "1st": "JavaScript", "2nd": "HTML/CSS" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/Dev-notes",
+        linkProject: "https://stay-green-seven.vercel.app/",
+        status: "Desarrollando",
+      },
+    ],
     projectsArchive:
       "Trabajos antiguos archivados. Comunícate conmigo para el catálogo completo.",
     aboutEyebrow: "— Sobre",
@@ -90,9 +242,9 @@ export const translations: Record<Locale, Translation> = {
       "Lejos del teclado, generalmente estoy dibujando, caminando o alimentando una pequeña obsesión por los sintetizadores analógicos.",
     aboutFacts: [
       { label: "Basado en", value: "Pacific Northwest" },
-      { label: "Actuando desde", value: "2014" },
+      { label: "Activo desde", value: "2014" }, // era "Actuando desde" → corrigido
       { label: "Stack principal", value: "TypeScript · Rust · Go" },
-      { label: "Atualmente", value: "Una startup de audio tools" },
+      { label: "Actualmente", value: "Una startup de audio tools" }, // era "Atualmente" → corrigido
       { label: "Foco", value: "Herramientas, sistemas, interfaces" },
       { label: "Abierto a", value: "Colaboraciones y residencias" },
     ],
@@ -124,6 +276,82 @@ export const translations: Record<Locale, Translation> = {
     projectsTitle: "Projects",
     projectsIntro:
       "A small archive of things I've built, broken and rebuilt. Each one is a study in restraint.",
+    projectsInfos: [
+      {
+        key: "fitai",
+        date: "2026",
+        img: "src/assets/img/FitAi.png",
+        title: "FIT.AI",
+        subtitle: "Build your workout plan with AI",
+        description:
+          "A gym SaaS where you can manage and create workout plans with AI.",
+        skills: { "1st": "Next.js", "2nd": "React", "3rd": "TypeScript" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/Bootcamp-Treinos-API",
+        linkProject: "",
+        status: "In development",
+      },
+      {
+        key: "calculadora",
+        date: "2026",
+        img: "src/assets/img/CalcImg.png",
+        title: "Multi-function Calculator",
+        subtitle: "From simple to advanced calculations",
+        description:
+          "A scientific calculator with history, conversion tables, BMI calculator and much more. All built with React and libraries.",
+        skills: {
+          "1st": "React",
+          "2nd": "JavaScript",
+          "3rd": "Tailwind/shadcn",
+        },
+        linkGithub: "",
+        linkProject:
+          "https://calculadora-react-px32ftrfu-joaoguisilvae-wqs-projects.vercel.app/tutorial?step=1&redirect=/",
+        status: "Refactoring",
+      },
+      {
+        key: "hotel",
+        date: "2026",
+        img: "",
+        title: "BRH - Lodging",
+        subtitle: "Easy and fast lodging",
+        description:
+          "An e-commerce hotel page project with real hotels, prices and services, but no real purchases.",
+        skills: {
+          "1st": "React",
+          "2nd": "TypeScript",
+          "3rd": "Tailwind/shadcn",
+        },
+        linkGithub: "https://github.com/joaoguisilvae-wq/BRH",
+        linkProject: "https://github.com/joaoguisilvae-wq/Calculadora-React",
+        status: "In development",
+      },
+      {
+        key: "staygreen",
+        date: "2026",
+        img: "",
+        title: "StayGreen",
+        subtitle: "Financial Awareness",
+        description:
+          "A project about personal finance that aims to help people get out of debt through charts, tables and more.",
+        skills: { "1st": "JavaScript", "2nd": "Python", "3rd": "HTML/CSS" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/StayGreen",
+        linkProject: "https://stay-green-seven.vercel.app/",
+        status: "In development",
+      },
+      {
+        key: "notes",
+        date: "2026",
+        img: "",
+        title: "Dev-Notes",
+        subtitle: "Take your notes",
+        description:
+          "A project built while learning JS — create new tasks, delete or pin them. Never lose your notes thanks to local storage.",
+        skills: { "1st": "JavaScript", "2nd": "HTML/CSS" },
+        linkGithub: "https://github.com/joaoguisilvae-wq/Dev-notes",
+        linkProject: "https://stay-green-seven.vercel.app/",
+        status: "developed",
+      },
+    ],
     projectsArchive: "Archived works. Reach out for the complete catalog.",
     aboutEyebrow: "— About",
     aboutTitle: "A silent engineer.",
@@ -137,7 +365,7 @@ export const translations: Record<Locale, Translation> = {
       "Away from the keyboard, I'm usually drawing, walking or feeding a small obsession with analog synthesizers.",
     aboutFacts: [
       { label: "Based in", value: "Pacific Northwest" },
-      { label: "Acting since", value: "2014" },
+      { label: "Active since", value: "2014" }, // era "Acting since" → corrigido
       { label: "Main stack", value: "TypeScript · Rust · Go" },
       { label: "Currently", value: "An audio tools startup" },
       { label: "Focus", value: "Tools, systems, interfaces" },

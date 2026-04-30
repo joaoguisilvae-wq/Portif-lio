@@ -1,5 +1,12 @@
 export type Locale = "pt" | "es" | "en";
 
+export type NavbarCopy = Pick<
+  Translation,
+  "navHome" | "navProjects" | "navAbout" | "navContact"
+>;
+
+type ProjectSkills = { "1st": string; "2nd": string; "3rd"?: string };
+
 export interface Translation {
   localeLabel: string;
   navAria: string;
@@ -25,6 +32,7 @@ export interface Translation {
   projectsCount: string;
   projectsTitle: string;
   projectsIntro: string;
+  projectsInfos: CardContent[];
   projectsArchive: string;
   aboutEyebrow: string;
   aboutTitle: string;
@@ -35,7 +43,19 @@ export interface Translation {
   aboutFacts: { label: string; value: string }[];
 }
 
-export type NavbarCopy = Pick<
-  Translation,
-  "navHome" | "navProjects" | "navAbout" | "navContact"
->;
+export interface CardContent {
+  key: string;
+  date: string;
+  img: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  skills: ProjectSkills;
+  linkGithub: string;
+  linkProject: string;
+  status: string;
+}
+
+export interface ProjectCardProps extends Omit<CardContent, "key"> {
+  cardKey: string;
+}

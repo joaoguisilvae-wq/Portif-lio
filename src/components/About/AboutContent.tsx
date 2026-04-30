@@ -10,7 +10,7 @@ const AboutContent = () => {
 
   return (
     <motion.div className="font-cormorant">
-      <p className="text-primary font-jetbrains mt-20 ml-85 mb-3">
+      <p className="text-primary font-jetbrains mt-20 max-w-[1300px] m-auto mb-3">
         {copy.aboutEyebrow}
       </p>
       <div className="flex text-center align-center items-center justify-around">
@@ -29,7 +29,6 @@ const AboutContent = () => {
           </Avatar>
         </motion.div>
       </div>
-
       <AnimatePresence>
         {open && (
           <>
@@ -41,7 +40,6 @@ const AboutContent = () => {
               className="fixed inset-0 bg-black/70 z-40 cursor-pointer"
             />
 
-            {/* Imagem grande */}
             <motion.div
               layoutId="avatar"
               className="fixed inset-0 z-50 m-auto w-[400px] h-[400px] rounded-full overflow-hidden"

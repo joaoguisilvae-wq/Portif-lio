@@ -2,7 +2,7 @@ import { useTranslation } from "@/context/TranslationContext";
 const AboutMe = () => {
   const { copy } = useTranslation();
   return (
-    <div className="flex flex-col border-l border-primary/13 px-10 gap-5">
+    <div className="flex flex-col border-l border-primary/13 px-10 justify-around">
       <div className="gap-2">
         <span className="text-foreground/40 text-sm text-sm">
           {copy.aboutFacts[0].label}

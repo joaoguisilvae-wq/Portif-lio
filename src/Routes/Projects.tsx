@@ -1,5 +1,11 @@
+import ProjectsContent from "@/components/Projects/ProjectsContent";
+
 const Projects = () => {
-  return <div></div>;
+  return (
+    <div>
+      <ProjectsContent />
+    </div>
+  );
 };
 
 export default Projects;

@@ -72,7 +72,7 @@ function HeroParticles() {
             easing: "ease-out-quad",
           },
           push: {
-            quantity: 10,
+            quantity: 5,
             distance: 100,
           },
         },

@@ -51,6 +51,5 @@ createRoot(document.getElementById("root")!).render(
     <TranslationProvider>
       <RouterProvider router={router} />
     </TranslationProvider>
-    ;
   </StrictMode>,
 );

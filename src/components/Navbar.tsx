@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import { motion } from "framer-motion";
 import ChangeLanguage from "./ChangeLanguage";
 import { useTranslation } from "../context/TranslationContext";
 
 const Navbar = () => {
   const { copy } = useTranslation();
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   const bounceVariants = {
     hidden: { y: -100, opacity: 0 },
@@ -34,12 +34,12 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* Navbar com animação */}
       <motion.div
         variants={bounceVariants}
         initial="hidden"
-        animate={isOpened ? "visible" : "exit"}
+        animate={isOpen ? "visible" : "exit"}
       >
         <div className="flex text-center items-center justify-around p-4 sticky top-0 w-full backdrop-blur-md z-50 h-16 font-jetbrains">
           <div className="flex text-center items-center gap-2">
@@ -64,16 +64,12 @@ const Navbar = () => {
         </div>
       </motion.div>
       <motion.button
-        onClick={() => setIsOpened(!isOpened)}
-        animate={{ rotate: isOpened ? 0 : 180 }}
+        onClick={() => setIsOpen(!isOpen)}
+        animate={{ rotate: isOpen ? 0 : 180, y: isOpen ? 0 : -50 }}
         transition={{ duration: 0.3 }}
-        className="w-full flex justify-center p-2"
+        className="w-full flex justify-center p-2 h-10"
       >
-        {isOpened ? (
-          <IoIosArrowDown className="text-primary/40" />
-        ) : (
-          <IoIosArrowUp className="text-primary/40" />
-        )}
+        <IoIosArrowDown className="text-primary/40" />
       </motion.button>
     </div>
   );

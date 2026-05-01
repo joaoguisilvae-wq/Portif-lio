@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import ChangeLanguage from "./ChangeLanguage";
 import { useTranslation } from "../context/TranslationContext";
 
@@ -10,7 +10,7 @@ const Navbar = () => {
   const { copy } = useTranslation();
   const [isOpen, setIsOpen] = useState(true);
 
-  const bounceVariants = {
+  const bounceVariants: Variants = {
     hidden: { y: -100, opacity: 0 },
     visible: {
       y: 0,
@@ -35,7 +35,6 @@ const Navbar = () => {
 
   return (
     <div className="overflow-hidden">
-      {/* Navbar com animação */}
       <motion.div
         variants={bounceVariants}
         initial="hidden"

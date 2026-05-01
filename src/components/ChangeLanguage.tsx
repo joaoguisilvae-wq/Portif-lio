@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTranslation } from "../context/TranslationContext";
 import type { Locale } from "../types";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 const ChangeLanguage = () => {
   const { locale, setLocale } = useTranslation();
@@ -31,14 +31,15 @@ const ChangeLanguage = () => {
       break;
   }
 
-  const bounceVariants = {
+  const bounceVariants: Variants = {
     hidden: { x: -50, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
       transition: {
         duration: 0.5,
-        type: "easeInOut",
+        type: "tween",
+        ease: "easeInOut",
       },
     },
     exit: {
@@ -55,7 +56,7 @@ const ChangeLanguage = () => {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fa-circle cursor-pointer border-none  bg-primary text-secondary rounded-full p-2 hover:bg-primary/80 hover:scale-105 transition-transform duration-500 w-6 h-6 flex items-center justify-center"
+        className="fa-circle cursor-pointer border-none bg-primary text-secondary rounded-full p-2 hover:bg-primary/80 hover:scale-105 transition-transform duration-500 w-6 h-6 flex items-center justify-center"
       >
         <IoLanguage />
       </button>

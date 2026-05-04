@@ -4,9 +4,17 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
+const statusColorMap: Record<string, string> = {
+  developing: "bg-blue-500/30",
+  refactoring: "bg-purple-500/30",
+  completed: "bg-green-500/30",
+  planned: "bg-gray-500/30",
+};
+
 const ProjectCard = ({
   cardKey,
   img,
+  statusType,
   status,
   date,
   title,
@@ -29,7 +37,11 @@ const ProjectCard = ({
           style={{ backgroundImage: `url(${img})` }}
           className="bg-cover bg-center bg-no-repeat relative h-[150px] text-card-foreground/40 rounded-t-sm"
         >
-          <span className="absolute left-2 top-2">{status}</span>
+          <span
+            className={`absolute left-2 top-2 ${statusColorMap[statusType] || ""} text-white p-1 rounded-lg`}
+          >
+            {status}
+          </span>
           <span className="absolute right-2 top-2">{date}</span>
         </div>
         <div className="p-4">
@@ -61,7 +73,6 @@ const ProjectCard = ({
           </div>
         </div>
       </motion.div>
-
       <AnimatePresence>
         {isOpen && (
           <>
@@ -80,7 +91,11 @@ const ProjectCard = ({
                 style={{ backgroundImage: `url(${img})` }}
                 className="bg-cover bg-center bg-no-repeat relative h-[250px] text-card-foreground/40"
               >
-                <span className="absolute left-2 top-2">{status}</span>
+                <span
+                  className={`absolute left-2 top-2 ${statusColorMap[statusType] || ""} text-white p-1 rounded-lg`}
+                >
+                  {status}
+                </span>
                 <span className="absolute right-2 top-2">{date}</span>
               </div>
               <div className="p-4">

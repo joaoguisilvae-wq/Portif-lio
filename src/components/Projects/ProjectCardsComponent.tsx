@@ -8,6 +8,7 @@ const ProjectCardsComponent = () => {
       <ProjectCard
         cardKey={copy.projectsInfos[0].key}
         img={copy.projectsInfos[0].img}
+        statusType={copy.projectsInfos[0].statusType}
         status={copy.projectsInfos[0].status}
         date={copy.projectsInfos[0].date}
         title={copy.projectsInfos[0].title}
@@ -20,6 +21,7 @@ const ProjectCardsComponent = () => {
       <ProjectCard
         cardKey={copy.projectsInfos[1].key}
         img={copy.projectsInfos[1].img}
+        statusType={copy.projectsInfos[1].statusType}
         status={copy.projectsInfos[1].status}
         date={copy.projectsInfos[1].date}
         title={copy.projectsInfos[1].title}
@@ -32,6 +34,7 @@ const ProjectCardsComponent = () => {
       <ProjectCard
         cardKey={copy.projectsInfos[2].key}
         img={copy.projectsInfos[2].img}
+        statusType={copy.projectsInfos[2].statusType}
         status={copy.projectsInfos[2].status}
         date={copy.projectsInfos[2].date}
         title={copy.projectsInfos[2].title}
@@ -44,6 +47,7 @@ const ProjectCardsComponent = () => {
       <ProjectCard
         cardKey={copy.projectsInfos[4].key}
         img={copy.projectsInfos[4].img}
+        statusType={copy.projectsInfos[4].statusType}
         status={copy.projectsInfos[4].status}
         date={copy.projectsInfos[4].date}
         title={copy.projectsInfos[4].title}
@@ -56,6 +60,7 @@ const ProjectCardsComponent = () => {
       <ProjectCard
         cardKey={copy.projectsInfos[3].key}
         img={copy.projectsInfos[3].img}
+        statusType={copy.projectsInfos[3].statusType}
         status={copy.projectsInfos[3].status}
         date={copy.projectsInfos[3].date}
         title={copy.projectsInfos[3].title}

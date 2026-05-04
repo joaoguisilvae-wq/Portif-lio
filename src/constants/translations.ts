@@ -1,3 +1,9 @@
+import {
+  BiLogoGithub,
+  BiLogoGmail,
+  BiLogoInstagram,
+  BiLogoLinkedin,
+} from "react-icons/bi";
 import type { Locale, Translation } from "../types";
 
 export const translations: Record<Locale, Translation> = {
@@ -32,6 +38,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "fitai",
         date: "2026",
+        statusType: "developing",
         img: "src/assets/img/FitAi.png",
         title: "FIT.AI",
         subtitle: "Faça seu plano de treino com IA",
@@ -45,6 +52,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "calculadora",
         date: "2026",
+        statusType: "refactoring",
         img: "src/assets/img/CalcImg.png",
         title: "Calculadora multifunções",
         subtitle: "Contas das simples as avançadas",
@@ -63,6 +71,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "hotel",
         date: "2026",
+        statusType: "developing",
         img: "",
         title: "BRH - Hospedagem",
         subtitle: "Hospedagem fácil e rápida",
@@ -80,7 +89,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "staygreen",
         date: "2026",
-        img: "",
+        statusType: "developing",
         title: "StayGreen",
         subtitle: "Conscientização Monetária",
         description:
@@ -93,6 +102,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "notes",
         date: "2026",
+        statusType: "completed",
         img: "",
         title: "Dev-Notes",
         subtitle: "Faça suas anotações",
@@ -123,6 +133,40 @@ export const translations: Record<Locale, Translation> = {
       { label: "Atualmente", value: "Uma startup de audio tools" },
       { label: "Foco", value: "Ferramentas, sistemas, interfaces" },
       { label: "Aberto a", value: "Colaborações e residências" },
+    ],
+    contactEyebrow: "— Contato",
+    contactTitle: "Contate-me ou diga-algo.",
+    contactLead:
+      "Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto interessante ou quer conversar sobre tecnologia, sinta-se à vontade para me contatar.",
+    contactInfos: [
+      {
+        title: "Email",
+        value: "joaoguisilvae@gmail.com",
+        link: "mailto:joaogui.silvae@gmail.com",
+        icon: BiLogoGmail,
+        count: "01",
+      },
+      {
+        title: "LinkedIn",
+        value: "joão Guilherme",
+        link: "https://www.linkedin.com/in/jo%C3%A3o-guilherme-b46971397/",
+        icon: BiLogoLinkedin,
+        count: "02",
+      },
+      {
+        title: "GitHub",
+        value: "joaoguisilvae-wq",
+        link: "https://github.com/joaoguisilvae-wq",
+        icon: BiLogoGithub,
+        count: "03",
+      },
+      {
+        title: "Instagram",
+        value: "joao G.S.E",
+        link: "https://www.instagram.com/joaogui.silvaeugenio?igsh=cXN4YndpMGQ1bm56",
+        icon: BiLogoInstagram,
+        count: "04",
+      },
     ],
   },
   es: {
@@ -156,6 +200,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "fitai",
         date: "2026",
+        statusType: "developing",
         img: "src/assets/img/FitAi.png",
         title: "FIT.AI",
         subtitle: "Crea tu plan de entrenamiento con IA",
@@ -169,6 +214,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "calculadora",
         date: "2026",
+        statusType: "refactoring",
         img: "src/assets/img/CalcImg.png",
         title: "Calculadora multifunción",
         subtitle: "Desde cálculos simples hasta avanzados",
@@ -187,6 +233,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "hotel",
         date: "2026",
+        statusType: "developing",
         img: "",
         title: "BRH - Hospedaje",
         subtitle: "Hospedaje fácil y rápido",
@@ -204,6 +251,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "staygreen",
         date: "2026",
+        statusType: "developing",
         img: "",
         title: "StayGreen",
         subtitle: "Conciencia Monetaria",
@@ -217,6 +265,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "notes",
         date: "2026",
+        statusType: "completed",
         img: "",
         title: "Dev-Notes",
         subtitle: "Haz tus anotaciones",
@@ -247,6 +296,40 @@ export const translations: Record<Locale, Translation> = {
       { label: "Actualmente", value: "Una startup de audio tools" }, // era "Atualmente" → corrigido
       { label: "Foco", value: "Herramientas, sistemas, interfaces" },
       { label: "Abierto a", value: "Colaboraciones y residencias" },
+    ],
+    contactEyebrow: "— Contacto",
+    contactTitle: "Contáctame o dime algo.",
+    contactLead:
+      "Siempre estoy abierto a nuevas oportunidades y colaboraciones. Si tienes un proyecto interesante o quieres hablar sobre tecnología, no dudes en contactarme.",
+    contactInfos: [
+      {
+        title: "Email",
+        value: "joaoguisilvae@gmail.com",
+        link: "mailto:joaogui.silvae@gmail.com",
+        icon: BiLogoGmail,
+        count: "01",
+      },
+      {
+        title: "LinkedIn",
+        value: "joão Guilherme",
+        link: "https://www.linkedin.com/in/jo%C3%A3o-guilherme-b46971397/",
+        icon: BiLogoLinkedin,
+        count: "02",
+      },
+      {
+        title: "GitHub",
+        value: "joaoguisilvae-wq",
+        link: "https://github.com/joaoguisilvae-wq",
+        icon: BiLogoGithub,
+        count: "03",
+      },
+      {
+        title: "Instagram",
+        value: "joao G.S.E",
+        link: "https://www.instagram.com/joaogui.silvaeugenio?igsh=cXN4YndpMGQ1bm56",
+        icon: BiLogoInstagram,
+        count: "04",
+      },
     ],
   },
   en: {
@@ -280,6 +363,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "fitai",
         date: "2026",
+        statusType: "developing",
         img: "src/assets/img/FitAi.png",
         title: "FIT.AI",
         subtitle: "Build your workout plan with AI",
@@ -293,6 +377,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "calculadora",
         date: "2026",
+        statusType: "refactoring",
         img: "src/assets/img/CalcImg.png",
         title: "Multi-function Calculator",
         subtitle: "From simple to advanced calculations",
@@ -311,6 +396,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "hotel",
         date: "2026",
+        statusType: "developing",
         img: "",
         title: "BRH - Lodging",
         subtitle: "Easy and fast lodging",
@@ -328,6 +414,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "staygreen",
         date: "2026",
+        statusType: "developing",
         img: "",
         title: "StayGreen",
         subtitle: "Financial Awareness",
@@ -341,6 +428,7 @@ export const translations: Record<Locale, Translation> = {
       {
         key: "notes",
         date: "2026",
+        statusType: "completed",
         img: "",
         title: "Dev-Notes",
         subtitle: "Take your notes",
@@ -365,11 +453,45 @@ export const translations: Record<Locale, Translation> = {
       "Away from the keyboard, I'm usually drawing, walking or feeding a small obsession with analog synthesizers.",
     aboutFacts: [
       { label: "Based in", value: "Pacific Northwest" },
-      { label: "Active since", value: "2014" }, // era "Acting since" → corrigido
+      { label: "Active since", value: "2014" },
       { label: "Main stack", value: "TypeScript · Rust · Go" },
       { label: "Currently", value: "An audio tools startup" },
       { label: "Focus", value: "Tools, systems, interfaces" },
       { label: "Open to", value: "Collaborations and residencies" },
+    ],
+    contactEyebrow: "— Contact",
+    contactTitle: "Get in touch or say something.",
+    contactLead:
+      "I'm always open to new opportunities and collaborations. If you have an interesting project or want to talk about technology, feel free to reach out.",
+    contactInfos: [
+      {
+        title: "Email",
+        value: "joaoguisilvae@gmail.com",
+        link: "mailto:joaogui.silvae@gmail.com",
+        icon: BiLogoGmail,
+        count: "01",
+      },
+      {
+        title: "LinkedIn",
+        value: "joão Guilherme",
+        link: "https://www.linkedin.com/in/jo%C3%A3o-guilherme-b46971397/",
+        icon: BiLogoLinkedin,
+        count: "02",
+      },
+      {
+        title: "GitHub",
+        value: "joaoguisilvae-wq",
+        link: "https://github.com/joaoguisilvae-wq",
+        icon: BiLogoGithub,
+        count: "03",
+      },
+      {
+        title: "Instagram",
+        value: "joao G.S.E",
+        link: "https://www.instagram.com/joaogui.silvaeugenio?igsh=cXN4YndpMGQ1bm56",
+        icon: BiLogoInstagram,
+        count: "04",
+      },
     ],
   },
 };

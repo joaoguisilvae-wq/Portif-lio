@@ -1,3 +1,5 @@
+import type { IconType } from "react-icons/lib";
+
 export type Locale = "pt" | "es" | "en";
 
 export type NavbarCopy = Pick<
@@ -32,7 +34,7 @@ export interface Translation {
   projectsCount: string;
   projectsTitle: string;
   projectsIntro: string;
-  projectsInfos: CardContent[];
+  projectsInfos: ProjectsInfos[];
   projectsArchive: string;
   aboutEyebrow: string;
   aboutTitle: string;
@@ -41,9 +43,13 @@ export interface Translation {
   aboutParagraphTwo: string;
   aboutParagraphThree: string;
   aboutFacts: { label: string; value: string }[];
+  contactEyebrow: string;
+  contactTitle: string;
+  contactLead: string;
+  contactInfos: ContactsInfos[];
 }
 
-export interface CardContent {
+export interface ProjectsInfos {
   key: string;
   date: string;
   img: string;
@@ -54,8 +60,17 @@ export interface CardContent {
   linkGithub: string;
   linkProject: string;
   status: string;
+  statusType: string;
 }
 
-export interface ProjectCardProps extends Omit<CardContent, "key"> {
+export interface ContactsInfos {
+  title: string;
+  link: string;
+  icon: IconType;
+  value: string;
+  count: string;
+}
+
+export interface ProjectCardProps extends Omit<ProjectsInfos, "key"> {
   cardKey: string;
 }

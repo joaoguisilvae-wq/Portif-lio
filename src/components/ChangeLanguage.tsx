@@ -71,12 +71,12 @@ const ChangeLanguage = () => {
             className="flex flex-row w-26 gap-2 absolute items-center justify-center top-14 right-54 text-primary bg-secondary p-2 rounded"
           >
             <IoIosArrowDropleft
-              className="w-4 h-4 flex items-center justify-center cursor-pointer active:scale-95 active:opacity-70 active:brightness-75"
+              className="w-4 h-4 flex items-center justify-center cursor-pointer hover:opacity-85 hover:brightness-90 active:scale-95 active:opacity-70 active:brightness-75"
               onClick={() => handleLanguageChange(previous)}
             />
             <p className="w-8 h-8 flex items-center justify-center">{locale}</p>
             <IoIosArrowDropright
-              className="w-4 h-4 flex items-center justify-center cursor-pointer active:scale-95 active:opacity-70 active:brightness-75"
+              className="w-4 h-4 flex items-center justify-center cursor-pointer hover:opacity-85 hover:brightness-90 active:scale-95 active:opacity-70 active:brightness-75"
               onClick={() => handleLanguageChange(next)}
             />
           </motion.div>

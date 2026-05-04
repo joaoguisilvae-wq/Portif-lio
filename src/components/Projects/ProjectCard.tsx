@@ -31,7 +31,7 @@ const ProjectCard = ({
       <motion.div
         layoutId={cardKey}
         onClick={() => setIsOpen(true)}
-        className="min-h-[300px] max-w-[325px] bg-secondary mx-auto cursor-pointer hover:scale-103 transition-all transitions-ease rounded-sm"
+        className="flex flex-col min-h-[300px] max-w-[350px] bg-secondary mx-auto cursor-pointer hover:scale-103 transition-all transitions-ease rounded-sm"
       >
         <div
           style={{ backgroundImage: `url(${img})` }}

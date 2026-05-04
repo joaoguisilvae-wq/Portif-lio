@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const ProjectCardsComponent = () => {
   const { copy } = useTranslation();
   return (
-    <div className="grid grid-cols-3 gap-4 items-center justify-center mx-auto my-20">
+    <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-center w-full mx-auto my-20">
       <ProjectCard
         cardKey={copy.projectsInfos[0].key}
         img={copy.projectsInfos[0].img}

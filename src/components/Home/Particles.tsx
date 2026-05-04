@@ -4,6 +4,9 @@ import { loadSlim } from "@tsparticles/slim";
 
 function HeroParticles() {
   const [ready, setReady] = useState(false);
+  const [windowSize, setWindowSize] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0,
+  );
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -13,9 +16,18 @@ function HeroParticles() {
     });
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const options = useMemo(
     () => ({
-      fullScreen: { enable: true },
+      fullScreen: { enable: windowSize >= 375 },
       fpsLimit: 60,
       detectRetina: true,
       background: {
@@ -78,7 +90,7 @@ function HeroParticles() {
         },
       },
     }),
-    [],
+    [windowSize],
   );
 
   if (!ready) {

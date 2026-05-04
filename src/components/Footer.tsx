@@ -4,9 +4,9 @@ const Footer = () => {
   const { copy } = useTranslation();
 
   return (
-    <div className="text-center text-sm text-primary py-4 font-inter fixed bottom-0 w-full backdrop-blur-md z-50 flex justify-around items-center px-4 h-16 border-t border-primary/13 font-jetbrains bg-secondary">
+    <div className="text-center text-sm text-primary p-2 sm:p-4 font-inter fixed bottom-0 w-full backdrop-blur-md z-50 flex justify-around items-center h-16 border-t border-primary/13 font-jetbrains bg-secondary">
       <p>{copy.footerTagline}</p>
-      <div className="flex gap-4">
+      <div className="flex gap-2 sm:gap-4">
         <a
           href="https://github.com/joaoguisilvae-wq"
           target="_blank"

@@ -9,12 +9,12 @@ const AboutContent = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.div className="font-cormorant">
-      <p className="text-primary font-jetbrains mt-20 max-w-[1300px] m-auto mb-3">
+    <motion.div className="font-cormorant mb-20">
+      <p className="text-primary font-jetbrains mt-10 sm:mt-20 max-w-[1300px] mx-auto mb-3">
         {copy.aboutEyebrow}
       </p>
       <div className="flex text-center align-center items-center justify-around">
-        <h1 className="text-7xl">{copy.aboutTitle}</h1>
+        <h1 className="text-5xl sm:text-7xl">{copy.aboutTitle}</h1>
         <motion.div
           layoutId="avatar"
           onClick={() => setOpen(true)}
@@ -42,7 +42,7 @@ const AboutContent = () => {
 
             <motion.div
               layoutId="avatar"
-              className="fixed inset-0 z-50 m-auto w-[400px] h-[400px] rounded-full overflow-hidden"
+              className="fixed inset-0 z-50 m-auto w-[400px] h-[400px] sm:w-[350px] sm:h-[350px] rounded-full overflow-hidden"
             >
               <img
                 src="src\assets\img\IMG_20260122_170722.jpg"

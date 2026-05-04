@@ -10,7 +10,9 @@ const ProjectsContent = () => {
         <p className="text-foreground/40">{copy.projectsCount}</p>
       </div>
       <div className="flex flex-col max-w-[1200px] m-auto gap-4">
-        <h1 className="text-9xl font-cormorant">{copy.projectsTitle}</h1>
+        <h1 className="text-8xl md:text-9xl font-cormorant">
+          {copy.projectsTitle}
+        </h1>
         <p className="font-inter max-w-[500px]">{copy.projectsIntro}</p>
       </div>
       <ProjectCardsComponent />

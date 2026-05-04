@@ -4,7 +4,7 @@ import { useTranslation } from "@/context/TranslationContext";
 const MeContacts = () => {
   const { copy } = useTranslation();
   return (
-    <div className="flex justify-around gap-5 w-full mx-auto">
+    <div className="flex flex-col gap-5 w-full items-center justify-around md:grid md:grid-cols-2 lg:grid-cols-4 md:place-items-center">
       <ContentCard
         title={copy.contactInfos[0].title}
         value={copy.contactInfos[0].value}

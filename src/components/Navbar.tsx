@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden w-full">
       <motion.div
         variants={bounceVariants}
         initial="hidden"
@@ -43,9 +43,9 @@ const Navbar = () => {
         <div className="flex text-center items-center justify-around p-4 sticky top-0 w-full backdrop-blur-md z-50 h-16 font-jetbrains">
           <div className="flex text-center items-center gap-2">
             <FaCircle className="text-primary" />
-            <p>JG. Silva</p>
+            <p className="text-sm">JG. Silva</p>
           </div>
-          <div className="flex text-center items-center justify-between gap-4">
+          <div className="grid grid-cols-2 sm:flex text-center items-center justify-between sm:gap-4">
             <Link to="/" className="mx-2 text text-primary link-hover">
               {copy.navHome}
             </Link>

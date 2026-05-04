@@ -15,12 +15,12 @@ export const translations: Record<Locale, Translation> = {
     navProjects: "Projetos",
     navAbout: "Sobre",
     navContact: "Contato",
-    topMeta: "// 47.6062° N · 122.3321° W",
+    topMeta: "// 23.5505° S · 46.6333° W", // ✅ fix: coordenadas de São Paulo
     kicker: "Desenvolvedor · Gamer · Calistênico",
-    titleStart: "Construindo",
-    titleEnd: "no escuro.",
+    titleStart: "Materializando",
+    titleEnd: "pensamentos.",
     descriptionStart:
-      "Projeto e desenvolvo software com a paciência de um artesão ",
+      "Projetando e desenvolvendo softwares com paciência, foco ",
     descriptionEnd: "e a curiosidade de um explorador.",
     linkProjects: "Projetos",
     linkAbout: "Sobre",
@@ -33,7 +33,10 @@ export const translations: Record<Locale, Translation> = {
     projectsCount: "05 / trabalhos",
     projectsTitle: "Projetos",
     projectsIntro:
-      "Um pequeno arquivo de coisas que construí, quebrei e reconstruí. Cada uma é um estudo de contenção.",
+      "Uma pequena coleção de projetos que criei, quebrei e reconstruí. Cada uma é uma aplicação de casos reais.",
+    // ✅ fix: campo faltava no PT
+    projectsArchive:
+      "Trabalhos antigos arquivados. Entre em contato para o catálogo completo.",
     projectsInfos: [
       {
         key: "fitai",
@@ -83,7 +86,7 @@ export const translations: Record<Locale, Translation> = {
           "3rd": "Tailwind/shadcn",
         },
         linkGithub: "https://github.com/joaoguisilvae-wq/BRH",
-        linkProject: "https://github.com/joaoguisilvae-wq/Calculadora-React",
+        linkProject: "", // ✅ fix: link errado removido
         status: "Desenvolvendo",
       },
       {
@@ -114,25 +117,26 @@ export const translations: Record<Locale, Translation> = {
         status: "Desenvolvido",
       },
     ],
-    projectsArchive:
-      "Trabalhos antigos arquivados. Entre em contato para o catálogo completo.",
     aboutEyebrow: "— Sobre",
-    aboutTitle: "Um engenheiro silencioso.",
+    aboutTitle: "Um desenvolvedor focado.",
     aboutLead:
-      "Trabalho entre código e composição: construindo ferramentas, interfaces e pequenos mundos. Valorizo sistemas que envelhecem bem, interfaces que respiram e a disciplina de remover mais do que adicionar.",
+      "Trabalho entre código e composição: construindo ferramentas, interfaces e pequenos mundos. Valorizo sistemas que envelhecem bem, interfaces interativas e a disciplina de remover mais do que adicionar.",
     aboutParagraphOne:
-      "Uma década entre laboratórios de pesquisa, estúdios indie e pequenas startups, sempre preferindo projetos onde o ofício importa mais que a escala.",
+      "Estou estudando a quase 2 anos, e venho fazendo projetos pequenos a médios, sempre focando em projetos responsivos, interativos e com um design mais limpo possível.",
     aboutParagraphTwo:
-      "Meus problemas favoritos vivem na fronteira de duas disciplinas: compiladores e tipografia, áudio e arquitetura, sistemas e silêncio.",
+      "Meus problemas favoritos são os que exigem pensamento crítico, criatividade e novos aprendizados.",
     aboutParagraphThree:
-      "Longe do teclado, geralmente estou desenhando, caminhando ou alimentando uma pequena obsessão por sintetizadores analógicos.",
+      "Longe do teclado, geralmente estou jogando, caminhando ou lendo.",
     aboutFacts: [
-      { label: "Baseado em", value: "Pacific Northwest" },
-      { label: "Atuando desde", value: "2014" },
-      { label: "Stack principal", value: "TypeScript · Rust · Go" },
-      { label: "Atualmente", value: "Uma startup de audio tools" },
-      { label: "Foco", value: "Ferramentas, sistemas, interfaces" },
-      { label: "Aberto a", value: "Colaborações e residências" },
+      { label: "Natural de", value: "São Paulo" },
+      { label: "Atuando desde", value: "2025" },
+      { label: "Stack principal", value: "TypeScript · JavaScript · React" },
+      { label: "Atualmente", value: "Projetos pessoais e com amigos" },
+      {
+        label: "Foco",
+        value: "Interfaces interativas e experiências de usuário",
+      },
+      { label: "Aberto a", value: "Pedidos e oportunidades" },
     ],
     contactEyebrow: "— Contato",
     contactTitle: "Contate-me ou diga-algo.",
@@ -169,6 +173,8 @@ export const translations: Record<Locale, Translation> = {
       },
     ],
   },
+
+  // ─────────────────────────────────────────────────────────────────────────────
   es: {
     localeLabel: "Español",
     navAria: "Secciones principales",
@@ -177,7 +183,7 @@ export const translations: Record<Locale, Translation> = {
     navProjects: "Proyectos",
     navAbout: "Sobre",
     navContact: "Contacto",
-    topMeta: "// 47.6062° N · 122.3321° W",
+    topMeta: "// 23.5505° S · 46.6333° W", // ✅ fix: coordenadas de São Paulo
     kicker: "Desarrollador · Gamer · Calisténico",
     titleStart: "Construyendo",
     titleEnd: "en la oscuridad.",
@@ -195,7 +201,9 @@ export const translations: Record<Locale, Translation> = {
     projectsCount: "05 / trabajos",
     projectsTitle: "Proyectos",
     projectsIntro:
-      "Un pequeño archivo de cosas que construí, rompí y reconstruí. Cada una es un estudio de contención.",
+      "Una pequeña colección de proyectos que construí, rompí y reconstruí. Cada uno es una aplicación de casos reales.",
+    projectsArchive:
+      "Trabajos antiguos archivados. Comunícate conmigo para el catálogo completo.",
     projectsInfos: [
       {
         key: "fitai",
@@ -245,7 +253,7 @@ export const translations: Record<Locale, Translation> = {
           "3rd": "Tailwind/shadcn",
         },
         linkGithub: "https://github.com/joaoguisilvae-wq/BRH",
-        linkProject: "https://github.com/joaoguisilvae-wq/Calculadora-React",
+        linkProject: "", // ✅ fix: link errado removido
         status: "Desarrollando",
       },
       {
@@ -274,28 +282,33 @@ export const translations: Record<Locale, Translation> = {
         skills: { "1st": "JavaScript", "2nd": "HTML/CSS" },
         linkGithub: "https://github.com/joaoguisilvae-wq/Dev-notes",
         linkProject: "https://stay-green-seven.vercel.app/",
-        status: "Desarrollando",
+        status: "Desarrollado", // ✅ fix: era "Desarrollando"
       },
     ],
-    projectsArchive:
-      "Trabajos antiguos archivados. Comunícate conmigo para el catálogo completo.",
     aboutEyebrow: "— Sobre",
-    aboutTitle: "Un ingeniero silencioso.",
+    aboutTitle: "Un desarrollador enfocado.", // ✅ fix: era "Un ingeniero silencioso."
+    // ✅ fix: retraduzido do PT
     aboutLead:
-      "Trabajo entre código y composición: construyendo herramientas, interfaces y pequeños mundos. Me importan los sistemas que envejecen bien, las interfaces que respiran y la disciplina de remover más de lo que agrego.",
+      "Trabajo entre código y composición: construyendo herramientas, interfaces y pequeños mundos. Valoro los sistemas que envejecen bien, las interfaces interactivas y la disciplina de eliminar más de lo que se agrega.",
+    // ✅ fix: retraduzido do PT
     aboutParagraphOne:
-      "Una década entre laboratorios de investigación, estudios indie y pequeñas startups, siempre prefiriendo proyectos donde el oficio importa más que la escala.",
+      "Llevo casi 2 años estudiando y he ido desarrollando proyectos de pequeño a mediano tamaño, siempre enfocándome en proyectos responsivos, interactivos y con el diseño más limpio posible.",
+    // ✅ fix: retraduzido do PT
     aboutParagraphTwo:
-      "Mis problemas favoritos viven en la frontera de dos disciplinas: compiladores y tipografía, audio y arquitectura, sistemas y silencio.",
+      "Mis problemas favoritos son los que exigen pensamiento crítico, creatividad y nuevos aprendizajes.",
+    // ✅ fix: retraduzido do PT
     aboutParagraphThree:
-      "Lejos del teclado, generalmente estoy dibujando, caminando o alimentando una pequeña obsesión por los sintetizadores analógicos.",
+      "Lejos del teclado, generalmente estoy jugando, caminando o leyendo.",
     aboutFacts: [
-      { label: "Basado en", value: "Pacific Northwest" },
-      { label: "Activo desde", value: "2014" }, // era "Actuando desde" → corrigido
-      { label: "Stack principal", value: "TypeScript · Rust · Go" },
-      { label: "Actualmente", value: "Una startup de audio tools" }, // era "Atualmente" → corrigido
-      { label: "Foco", value: "Herramientas, sistemas, interfaces" },
-      { label: "Abierto a", value: "Colaboraciones y residencias" },
+      { label: "Natural de", value: "São Paulo" }, // ✅ fix: era "Pacific Northwest"
+      { label: "Activo desde", value: "2025" }, // ✅ fix: era "2014"
+      { label: "Stack principal", value: "TypeScript · JavaScript · React" }, // ✅ fix: era "Rust · Go"
+      { label: "Actualmente", value: "Proyectos personales y con amigos" }, // ✅ fix: era startup de audio
+      {
+        label: "Foco",
+        value: "Interfaces interactivas y experiencias de usuario",
+      }, // ✅ fix
+      { label: "Abierto a", value: "Pedidos y oportunidades" }, // ✅ fix: era "Colaboraciones y residencias"
     ],
     contactEyebrow: "— Contacto",
     contactTitle: "Contáctame o dime algo.",
@@ -332,6 +345,8 @@ export const translations: Record<Locale, Translation> = {
       },
     ],
   },
+
+  // ─────────────────────────────────────────────────────────────────────────────
   en: {
     localeLabel: "English",
     navAria: "Main sections",
@@ -340,7 +355,7 @@ export const translations: Record<Locale, Translation> = {
     navProjects: "Projects",
     navAbout: "About",
     navContact: "Contact",
-    topMeta: "// 47.6062° N · 122.3321° W",
+    topMeta: "// 23.5505° S · 46.6333° W", // ✅ fix: coordenadas de São Paulo
     kicker: "Developer · Gamer · Calisthenics",
     titleStart: "Building",
     titleEnd: "in the dark.",
@@ -358,7 +373,8 @@ export const translations: Record<Locale, Translation> = {
     projectsCount: "05 / works",
     projectsTitle: "Projects",
     projectsIntro:
-      "A small archive of things I've built, broken and rebuilt. Each one is a study in restraint.",
+      "A small collection of projects I built, broke and rebuilt. Each one is a real-world application.",
+    projectsArchive: "Archived works. Reach out for the complete catalog.",
     projectsInfos: [
       {
         key: "fitai",
@@ -408,7 +424,7 @@ export const translations: Record<Locale, Translation> = {
           "3rd": "Tailwind/shadcn",
         },
         linkGithub: "https://github.com/joaoguisilvae-wq/BRH",
-        linkProject: "https://github.com/joaoguisilvae-wq/Calculadora-React",
+        linkProject: "", // ✅ fix: link errado removido
         status: "In development",
       },
       {
@@ -437,27 +453,30 @@ export const translations: Record<Locale, Translation> = {
         skills: { "1st": "JavaScript", "2nd": "HTML/CSS" },
         linkGithub: "https://github.com/joaoguisilvae-wq/Dev-notes",
         linkProject: "https://stay-green-seven.vercel.app/",
-        status: "developed",
+        status: "Developed", // ✅ fix: era "developed" (minúsculo inconsistente)
       },
     ],
-    projectsArchive: "Archived works. Reach out for the complete catalog.",
     aboutEyebrow: "— About",
-    aboutTitle: "A silent engineer.",
+    aboutTitle: "A focused developer.", // ✅ fix: era "A silent engineer."
+    // ✅ fix: retraduzido do PT
     aboutLead:
-      "I work between code and composition: building tools, interfaces and small worlds. I value systems that age well, interfaces that breathe and the discipline of removing more than adding.",
+      "I work between code and composition: building tools, interfaces and small worlds. I value systems that age well, interactive interfaces and the discipline of removing more than adding.",
+    // ✅ fix: retraduzido do PT
     aboutParagraphOne:
-      "A decade between research labs, indie studios and small startups, always preferring projects where craft matters more than scale.",
+      "I've been studying for almost 2 years, building small to medium projects, always focused on responsive, interactive work with the cleanest design possible.",
+    // ✅ fix: retraduzido do PT
     aboutParagraphTwo:
-      "My favorite problems live at the boundary of two disciplines: compilers and typography, audio and architecture, systems and silence.",
+      "My favorite problems are the ones that demand critical thinking, creativity and new learning.",
+    // ✅ fix: retraduzido do PT
     aboutParagraphThree:
-      "Away from the keyboard, I'm usually drawing, walking or feeding a small obsession with analog synthesizers.",
+      "Away from the keyboard, I'm usually gaming, walking or reading.",
     aboutFacts: [
-      { label: "Based in", value: "Pacific Northwest" },
-      { label: "Active since", value: "2014" },
-      { label: "Main stack", value: "TypeScript · Rust · Go" },
-      { label: "Currently", value: "An audio tools startup" },
-      { label: "Focus", value: "Tools, systems, interfaces" },
-      { label: "Open to", value: "Collaborations and residencies" },
+      { label: "From", value: "São Paulo" }, // ✅ fix: era "Pacific Northwest"
+      { label: "Active since", value: "2025" }, // ✅ fix: era "2014"
+      { label: "Main stack", value: "TypeScript · JavaScript · React" }, // ✅ fix: era "Rust · Go"
+      { label: "Currently", value: "Personal projects and with friends" }, // ✅ fix: era startup de audio
+      { label: "Focus", value: "Interactive interfaces and user experiences" }, // ✅ fix
+      { label: "Open to", value: "Requests and opportunities" }, // ✅ fix: era "Collaborations and residencies"
     ],
     contactEyebrow: "— Contact",
     contactTitle: "Get in touch or say something.",

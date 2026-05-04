@@ -52,7 +52,6 @@ export interface Translation {
 export interface ProjectsInfos {
   key: string;
   date: string;
-  img: string;
   title: string;
   subtitle: string;
   description: string;
@@ -61,6 +60,7 @@ export interface ProjectsInfos {
   linkProject: string;
   status: string;
   statusType: string;
+  img?: string;
 }
 
 export interface ContactsInfos {
